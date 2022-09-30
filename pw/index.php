@@ -13,10 +13,11 @@ $buku = query("SELECT * FROM buku");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Buku</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="warna">
     <nav class="navbar navbar-expand-lg bg-success p-2 fixed-top text-dark bg-opacity-50">
         <div class="container-md">
             <a class="navbar-brand fst-italic fs-3">Novelku Cinta Islam</a>
@@ -31,11 +32,6 @@ $buku = query("SELECT * FROM buku");
                 <img width="70px" height="250px" src="../img/<?php echo $b['gambar_buku']; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $b['judul_buku']; ?></h5>
-                    <p class="card-text fw-lighter">
-                        Pengarang : <?php echo $b['pengarang_buku']; ?>
-                        <br>
-                        Penerbit : <?php echo $b['penerbit_buku']; ?>
-                    </p>
                     <a href="detail.php?id_buku=<?php echo $b['id_buku']; ?>" type="button" class="btn btn-outline-success fst-italic">Lihat Detail</a>
                 </div>
             </div>
