@@ -19,7 +19,7 @@ $buku = query("SELECT * FROM buku");
 <body>
     <nav class="navbar navbar-expand-lg bg-success p-2 fixed-top text-dark bg-opacity-50">
         <div class="container-md">
-            <a class="navbar-brand fst-italic fs-3">Novel Cinta Islam</a>
+            <a class="navbar-brand fst-italic fs-3">Novelku Cinta Islam</a>
             <a class="text-end fst-italic btn btn-outline-success" type="button" style="text-decoration: none;" href="tambah.php">Tambah Novel</a>
         </div>
     </nav>
